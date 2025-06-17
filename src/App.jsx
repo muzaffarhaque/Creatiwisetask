@@ -1,6 +1,6 @@
 import './App.scss'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Home} from './pages';
+import {Home} from './pages/Home.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -12,7 +12,7 @@ function App() {
     ]);
     return (
     <> 
-    <h1>hello</h1>
+    {/* <h1>hello</h1> */}
      <RouterProvider router={router}/>
      <ToastContainer /> 
     </>)
