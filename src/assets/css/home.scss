@@ -122,6 +122,7 @@
     margin-top: 32px;
     .expertise_box {
         max-width: 588px;
+        width: 44vw;
         h5 {
             font-family: Syne;
             font-weight: 600;
@@ -174,6 +175,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 100%;
+        color: #FFF;
         letter-spacing: 0;
         cursor: pointer;
         text-decoration: underline;
@@ -193,7 +195,6 @@
 .word-card-box {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     align-items: stretch;
     gap: clamp(20px, 3vw, 32px);
     background: #CBCBCB7A;
@@ -343,6 +344,9 @@
         padding: 8px 0;
         background-color: rgba(255, 255, 255, 0.2);
     }
+    .word-card-box{
+        flex-wrap: wrap;
+    }
     #so:checked ~ .navbar {
         display: flex !important;
     }
@@ -401,5 +405,8 @@
     .work-section ,
     .experience-section {
         padding: 40px 0;
+    }
+    .expertise_box-frae {
+    .expertise_box {width: 100%;}
     }
 }
