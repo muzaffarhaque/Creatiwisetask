@@ -13,6 +13,12 @@ import work1 from '../assets/images/workImage.png';
 import { ExpertiseBox, SubHeader, WorkCard } from '../components';
 const Expertise =["Branding", "Web Design", "UI/UX Design","Graphic Design"];
 const workImages = ['Analysis Application', 'Fortknox Application', 'Zenocide Application'];
+const experienceText = [
+  { title: 'Lead Product Designer', company: 'Fortknox', date: 'Mar 2022 - Oct 2023' },
+  { title: 'Intern Designer', company: 'Wavefun', date: 'Jan 2020 - Feb 2022' },
+  { title: 'UI Designer', company: 'Silla', date: 'Jun 2018 - Dec 2019' },
+  { title: 'Frontend Developer', company: 'OpacityAuthor', date: 'Jun 2023 - Dec 2024' },
+];
 export default function Home() {
 
   return (
@@ -76,6 +82,46 @@ export default function Home() {
                   <WorkCard key={index} index={index} title={item} />
                 )
               })}
+
+            </div>
+          </div>
+        </section>
+
+
+
+        <section className='experience-section'>
+          <div className="container">
+            <SubHeader title="Experience" viewAll={false} />
+            <div className="experience_box_wrapper">
+              {experienceText?.map((item, index) => {
+               const { title, company, date } = item;
+                return(
+                      <div className="experience_box">
+                        <h6 className='mb-full'>{title || 'Lead Product Designer'}</h6>
+                        <div className="experience_box_content">
+                          <p className='name'>{company || "Fortknox"}</p>
+                          <p className='date'>{date || "Mar 2022 - Oct 2023"}</p>
+                        </div>
+                      </div>
+                )
+              })}
+         
+            </div>
+          </div>
+        </section>
+
+
+        <section className='blog-section'>
+          <div className="container">
+            <SubHeader title="Blog" viewAll={true} />
+            <div className="word_box-frae">
+              {/* {workImages?.map((item, index) => {
+                console.log('item', item);
+                console.log('index', index);
+                return(
+                  
+                )
+              })} */}
 
             </div>
           </div>

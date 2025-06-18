@@ -8,6 +8,7 @@ export default function WorkCard({index,title}) {
     console.log('workImages', workImages[index],index);
   return (
     <div  className="word-card-box">
+       <img src={ellips} alt="" className="ellips_image" />
       <div className="img-box mb-full">
         <img src={workImages[index]} alt="" />
       </div>
@@ -25,7 +26,6 @@ export default function WorkCard({index,title}) {
         </div>
         <div className="primary-active-btn">View Case Study</div>
       </div>
-      <img src={ellips} alt="" className="ellips_image" />
     </div>
   );
 }
