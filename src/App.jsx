@@ -6,6 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     const router = createBrowserRouter([
         {
+            path: "/home",
+            element: <Home/>
+        },
+           {
             path: "/",
             element: <Home/>
         }
