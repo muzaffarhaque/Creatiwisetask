@@ -1,6 +1,6 @@
 import './App.scss'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Home} from './pages/Home.jsx';
+import Home from './pages/Home.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
